@@ -1,0 +1,58 @@
+
+<body>
+    <script>
+        function pick() {
+            const number = (Math.random() * 3);
+            if (number <= 1) {
+                return 'rock';
+            }else if (number >= 2) {
+                return 'scissors';
+            }else return 'paper';
+        }
+        
+        
+            
+        var player = prompt("enter 1 (for rock)2(for paper)3(forscissors)");
+
+        
+            
+        
+        
+        var last = (pick() + " " + player);
+        console.log(last);
+
+        function win () {
+            if (last ==  "rock 1") {
+                console.log ("its a tie! (rock-rock)");
+            }
+            if (last == "rock 2") {
+                console.log("paper beats rock (Human won)");
+            }
+            if (last == "rock 3") {
+                console.log("rock beats scissors (Ai won)")
+            }
+
+            if (last ==  "scissors 1") {
+                console.log ("Rock beats scissors! (Human won!)");
+            }
+            if (last == "scissors 2") {
+                console.log("Scissors beats paper (Ai won)");
+            }
+            if (last == "scissors 3") {
+                console.log("Its a tie!")
+            }
+
+
+            if (last ==  "paper 1") {
+                console.log ("Paper beats rock (Ai won!)");
+            }
+            if (last == "paper 3") {
+                console.log("Scissors beats paper (Human won)");
+            }
+            if (last == "paper 2") {
+                console.log("Its a tie!")
+        }
+        console.log(win());
+
+    </script>
+</body>
